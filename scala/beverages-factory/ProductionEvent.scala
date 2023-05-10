@@ -15,4 +15,7 @@ object ProductionEvent {
   // Работник Баханов выпил напитки
   case class BeverageProductionNeglect(factoryName: String)
       extends ProductionEvent
+  // Достигнут лимит по времени производства напитков на одной из фабрик
+  case class BeverageProductionTimeout(factoryName: String)
+      extends ProductionEvent
 }
