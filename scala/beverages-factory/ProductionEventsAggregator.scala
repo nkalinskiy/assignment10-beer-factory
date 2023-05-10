@@ -14,7 +14,7 @@ object ProductionEventsAggregator {
       extends ProductionEventsAggregator {
 
     override def saveProductionEvent(
-        productionResult: ProductionEvent
+        productionEvent: ProductionEvent
     ): IO[Unit] =
       state.update(_ :+ productionEvent)
 
