@@ -1,3 +1,6 @@
+import cats.effect.kernel.Ref
+import cats.effect.IO
+
 trait ProductionEventAggregator {
   // Метод принимает результат производтсва одного напитка и сохраняет его в общий список всех событий со всех фабрик
   def receiveProductionEvent(productionEvent: ProductionEvent): IO[Unit]
