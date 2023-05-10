@@ -1,6 +1,3 @@
-import cats.effect.kernel.Ref
-import cats.effect.IO
-
 sealed trait ProductionEvent {
   def factoryName: String
 }
