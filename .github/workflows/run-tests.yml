@@ -6,6 +6,7 @@ on:
       - 'build.sbt'
     branches:
       - master
+      - main
 
 jobs:
   test:
