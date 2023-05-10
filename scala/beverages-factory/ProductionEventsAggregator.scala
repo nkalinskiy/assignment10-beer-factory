@@ -16,7 +16,7 @@ object ProductionEventsAggregator {
     override def saveProductionEvent(
         productionResult: ProductionEvent
     ): IO[Unit] =
-      state.update(_ :+ productionResult)
+      state.update(_ :+ productionEvent)
 
     override def getAllEvents(): IO[List[ProductionEvent]] =
       state.get
